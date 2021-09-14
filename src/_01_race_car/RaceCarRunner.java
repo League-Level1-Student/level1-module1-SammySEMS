@@ -20,9 +20,14 @@ System.out.println(car.getPositionInRace());
 if(car.damaged){
 	car.pit();
 	
+	
 }
-
+System.out.println((car.getPositionInRace()));
 		// 5. Help the car move into first place.
+for (int i = 0; i < 7; i++) {
+	
 
-	}
+car.overtake();
+System.out.println(car.getPositionInRace());
+	}}
 }
