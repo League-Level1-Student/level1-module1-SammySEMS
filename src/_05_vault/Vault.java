@@ -1,23 +1,34 @@
 package _05_vault;
 
+import java.util.Random;
+
+import javax.swing.JOptionPane;
+
 public class Vault {
 
-	int number;
-Vault vault = new Vault(143);
+int code;
 
 
 
 
-public Vault(int i) {
+public Vault() {
+	Random r = new Random();
+	code=r.nextInt(1000000);
 	// TODO Auto-generated constructor stub
 }
 
 
 
-
-void tryCode() {
 	
-	if(number == )
+
+boolean tryCode(int guess) {
+
+if (guess==code) {
+return true;
+}
+else {
+	return false;
+}
 }
 
 }
